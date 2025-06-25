@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arwa | Cyber Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arwa | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Toggle Theme -->
-  <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
-
-  <!-- Header with background -->
   <header class="hero-section" id="home">
     <div class="overlay">
       <nav class="navbar">
@@ -25,7 +20,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="hero-content" data-animate>
+      <div class="hero-content">
         <h2 class="neon">Hello, I’m Arwa</h2>
         <p>Cybersecurity Student | C & Python Developer</p>
         <a href="#projects" class="btn">See My Work</a>
@@ -33,15 +28,17 @@
     </div>
   </header>
 
-  <!-- About -->
-  <section class="section" id="about" data-animate>
+  <section class="section" id="about">
     <h2 class="section-title">About Me</h2>
-    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img">
-    <p class="section-text">I’m a cybersecurity student passionate about secure systems, ethical hacking, and creative programming. I explore both low-level code and high-level problem-solving daily.</p>
+    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img" />
+    <p class="section-text">
+      I’m a cybersecurity student passionate about secure systems,
+      ethical hacking, and creative programming. I explore both low-level
+      code and high-level problem-solving daily.
+    </p>
   </section>
 
-  <!-- Skills -->
-  <section class="section" id="skills" data-animate>
+  <section class="section" id="skills">
     <h2 class="section-title">My Skills</h2>
     <ul class="skills-list">
       <li>Python</li>
@@ -52,33 +49,33 @@
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects" data-animate>
+  <section class="section" id="projects">
     <h2 class="section-title">Projects</h2>
-    <div class="portfolio">
-      <div class="card">
-        <img src="assets/img/project1.png" alt="Project 1">
-        <h3>Network 3-Tier Architecture</h3>
-        <p>Simulated secure network layers for server-client setup using virtual machines.</p>
-      </div>
+    <div class="project-card">
+      <img src="assets/img/project1.png" alt="Project 1" />
+      <h3>Network 3-Tier Architecture</h3>
+      <p>
+        Simulated secure layered network using VMs for client-server
+        infrastructure with firewall protections.
+      </p>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact" data-animate>
-    <h2 class="section-title">Contact</h2>
-    <p>Email: arwa@example.com</p>
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:arwa@example.com">arwa@example.com</a></p>
     <p>Location: Algeria</p>
-    <a href="assets/Arwa_CV.pdf" class="btn" download>Download CV</a>
+    <a href="assets/Arwa-CV.pdf" download class="btn">Download CV</a>
+    <div class="social-links">
+      <a href="https://github.com/ArwaSaidi" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/arwa-saidi" target="_blank">LinkedIn</a>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Arwa | All rights reserved.</p>
+    <p>&copy; 2025 Arwa. All rights reserved.</p>
   </footer>
 
-  <!-- External JavaScript File -->
   <script src="script.js"></script>
-
 </body>
 </html>
