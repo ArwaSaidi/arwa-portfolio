@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arwa | Cybersecurity Portfolio</title>
+  <title>Aroua | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -11,69 +11,90 @@
   <header class="hero-section" id="home">
     <div class="overlay">
       <nav class="navbar">
-        <h1 class="logo">Arwa<span class="neon">.</span></h1>
+        <h1 class="logo">Aroua<span class="neon">.</span></h1>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="hero-content">
-        <h2 class="neon">Hello, I’m Arwa</h2>
+        <h2 class="neon">Aroua Saidi</h2>
         <p>Cybersecurity Student | C & Python Developer</p>
-        <a href="#projects" class="btn">See My Work</a>
+        <a href="#about" class="btn" id="show-sections">Learn More</a>
       </div>
     </div>
   </header>
 
-  <section class="section" id="about">
+  <section class="section hidden-section" id="about">
     <h2 class="section-title">About Me</h2>
-    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img" />
-    <p class="section-text">
-      I’m a cybersecurity student passionate about secure systems,
-      ethical hacking, and creative programming. I explore both low-level
-      code and high-level problem-solving daily.
-    </p>
+    <div class="about-grid">
+      <div class="about-left">
+        <img src="assets/img/profile.jpg" alt="Profile" class="profile-img" />
+      </div>
+      <div class="about-right">
+        <p class="section-text">
+          I'm a passionate cybersecurity student focused on ethical hacking, secure system design, and building real-world solutions using Python and C.
+        </p>
+        <div class="personal-info">
+          <ul>
+            <li><strong>Age:</strong> 18</li>
+            <li><strong>City:</strong> Khenchela, Algeria</li>
+            <li><strong>Degree:</strong> Bachelor's in Cybersecurity</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/ArwaSaidi" target="_blank">github.com/ArwaSaidi</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section" id="skills">
-    <h2 class="section-title">My Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>C Language</li>
-      <li>Linux</li>
-      <li>Network Security</li>
-      <li>Git & GitHub</li>
-    </ul>
+  <section class="section hidden-section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-icons">
+      <div class="skill-item"><img src="assets/img/python.png" alt="Python" /><span>Python</span></div>
+      <div class="skill-item"><img src="assets/img/c.png" alt="C Language" /><span>C Language</span></div>
+      <div class="skill-item"><img src="assets/img/linux.png" alt="Linux" /><span>Linux</span></div>
+      <div class="skill-item"><img src="assets/img/network.png" alt="Network Security" /><span>Network Security</span></div>
+      <div class="skill-item"><img src="assets/img/github.png" alt="GitHub" /><span>Git & GitHub</span></div>
+    </div>
   </section>
 
-  <section class="section" id="projects">
+  <section class="section hidden-section" id="interests">
+    <h2 class="section-title">Interests</h2>
+    <div class="skills-icons">
+      <div class="skill-item"><img src="assets/img/hacking.png" alt="Hacking" /><span>Ethical Hacking</span></div>
+      <div class="skill-item"><img src="assets/img/ctf.png" alt="CTF" /><span>CTF Challenges</span></div>
+      <div class="skill-item"><img src="assets/img/code.png" alt="Code" /><span>Low-level Code</span></div>
+      <div class="skill-item"><img src="assets/img/learn.png" alt="Learn" /><span>Learning New Tools</span></div>
+    </div>
+  </section>
+
+  <section class="section hidden-section" id="projects">
     <h2 class="section-title">Projects</h2>
     <div class="project-card">
       <img src="assets/img/project1.png" alt="Project 1" />
       <h3>Network 3-Tier Architecture</h3>
-      <p>
-        Simulated secure layered network using VMs for client-server
-        infrastructure with firewall protections.
-      </p>
+      <p>Simulated secure layered network using VMs for client-server infrastructure with firewall protections.</p>
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section class="section hidden-section" id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <p>Email: <a href="mailto:arwa@example.com">arwa@example.com</a></p>
+    <p>Email: <a href="mailto:arwasaidi2024@gmail.com">arwasaidi2024@gmail.com</a></p>
     <p>Location: Algeria</p>
     <a href="assets/Arwa-CV.pdf" download class="btn">Download CV</a>
     <div class="social-links">
-      <a href="https://github.com/ArwaSaidi" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/arwa-saidi" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ArouaSaidi" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/aroua-saidi" target="_blank">LinkedIn</a>
+
     </div>
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 Arwa. All rights reserved.</p>
+    <p>&copy; 2025 Aroua. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
