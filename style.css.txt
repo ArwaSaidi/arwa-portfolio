@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arwa | Cyber Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header with background -->
+  <header class="hero-section" id="home">
+    <div class="overlay">
+      <nav class="navbar">
+        <h1 class="logo">Arwa<span class="neon">.</span></h1>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h2 class="neon">Hello, I’m Arwa</h2>
+        <p>Cybersecurity Student | C & Python Developer</p>
+        <a href="#projects" class="btn">See My Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img">
+    <p class="section-text">I’m a cybersecurity student passionate about secure systems, ethical hacking, and creative programming. I explore both low-level code and high-level problem-solving daily.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>C Language</li>
+      <li>Linux</li>
+      <li>Network Security</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-card">
+      <img src="assets/img/project1.png" alt="Project 1">
+      <h3>Network 3-Tier Architecture</h3>
+      <p>Simulated secure layered network using VMs for client-server infrastructure with firewall protections.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:arwa@example.com">arwa@example.com</a></p>
+    <p>Location: Algeria</p>
+    <a href="assets/Arwa-CV.pdf" download class="btn">Download CV</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Arwa. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
