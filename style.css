@@ -1,88 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arwa | Cyber Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
+/* ========== Base ========== */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
 
-  <!-- Header with background -->
-  <header class="hero-section" id="home">
-    <div class="overlay">
-      <nav class="navbar">
-        <h1 class="logo">Arwa<span class="neon">.</span></h1>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <h2 class="neon">Hello, I’m Arwa</h2>
-        <p>Cybersecurity Student | C & Python Developer</p>
-        <a href="#projects" class="btn">See My Work</a>
-      </div>
-    </div>
-  </header>
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
-    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img">
-    <p class="section-text">I’m a cybersecurity student passionate about secure systems, ethical hacking, and creative programming. I explore both low-level code and high-level problem-solving daily.</p>
-  </section>
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>C Language</li>
-      <li>Linux</li>
-      <li>Network Security</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-card">
-      <img src="assets/img/project1.png" alt="Project 1">
-      <h3>Network 3-Tier Architecture</h3>
-      <p>Simulated secure layered network using VMs for client-server infrastructure with firewall protections.</p>
-    </div>
-  </section>
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p>Email: <a href="mailto:arwa@example.com">arwa@example.com</a></p>
-    <p>Location: Algeria</p>
-    <a href="assets/Arwa-CV.pdf" download class="btn">Download CV</a>
-  </section>
+.nav-links a:hover {
+  color: #0ff;
+}
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Arwa. All rights reserved.</p>
-  </footer>
+/* ========== Hero Section ========== */
+.hero-section {
+  background-image: url('assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
 
-</body>
-</html>
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ========== Sections ========== */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0ff;
+}
+
+.section-text {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ========== Profile Image ========== */
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Skills List ========== */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 18px;
+}
+
+/* ========== Projects ========== */
+.project-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ========== Button ========== */
+.btn {
+  background-color: #0ff;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #0cc;
+}
+
+/* ========== Footer ========== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  font-size: 14px;
+  color: #999;
+}
